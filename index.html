@@ -8,18 +8,27 @@
     <title>Black Friday</title>
 </head>
 <body>
-    <header class="section-conteiner backgroundd-section-one">
-       <img src="/assets/logo-blackfriday.png" alt="Logo black Friday">
+    <header class="section-conteiner background-section-one">
+        <img src="/assets/logo-blackfriday.png" alt="Logo black Friday">
     </header>
 
-    <section class="section-conteiner backgroundd-section-two">
-        <div>
-            <form action="">
-                <input type="text" placeholder="name"> 
-                <input type="text" placeholder="email">
-                <input type="submit" value="Receber meu desconto"
-                
+    <section class="section-container background-section-two">
+        <div  id="content">
+            <img src="/assets/logo-desconto.png">
+
+            <form class="card-container" id="form">
+                <label>
+                    Nome
+                <input  type="text" placeholder="Como gostaria de ser chamado(a)" id="nome"/>
+                </label>
+                <label>
+                    Email
+                <input type="text" placeholder=" Meu melhor E-mail" id="email"/>
+                </label> 
+
+                <input class="inputSubmit" type="submit" value="Receber meu desconto">
             </form>
+        
         </div>
 
     </section>
@@ -29,7 +38,7 @@
             Todos os direitos reservados.
         </p>
     </footer>
-
+<script src="../js/script.js"></script>
 </body>
-<script src="/js/script.js">
+
 </html>
