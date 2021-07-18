@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 /*color 00ff4e*/
 
@@ -9,14 +11,33 @@ html{
     scroll-behavior: smooth;
 }
 
-.section-container{
+.section-conteiner{
     height: 100vh;
-    width: 100%;
+    width:100% ;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
+    .logo-blackfriday{
+        display: flex;
+        max-width:500 px;
+        padding: 60px 25px 25px 25px;
+        
+    }
+    
+
+    h2{
+        display: flex;
+        width: 1000px;
+        color: #00ff4e;
+        font-size: 5rem;
+        text-align: center;
+        
+    }
+
+
 .background-section-one{
     
     background-image:  url("/assets/bg-black-wall.jpg");
@@ -25,6 +46,7 @@ html{
     background-repeat: no-repeat;
 
 }
+
 .background-section-two{
     
     background-image:  url("/assets/bg-black-wall-02.jpg");
@@ -34,38 +56,37 @@ html{
 
 }
 
-
-
-header{
-    background-repeat: no-repeat;
-    background-size:cover;
+.logo-desconto{
+    max-width: 360px;
+    padding: 0px 50px 25px 50px;
 }
 
-.card-container{
-    align-items: center;
-    background-color: #00ff4e;
-    border-radius: 5px;
-}
-    form{
+    .card-conteiner{
         display: grid;
-        height: 250px;
-        width: 300px;
-        padding: 25px;
+        align-items: center;
+        background-color: #00ff4e;
+        border-radius: 5px;
+        
     }
-
-        input{
-            width: 100%;
-            height: 35px;
-            text-align: center;
-            border-radius: 5px;
-            color: #000000;
-            margin: 10px 0px;
-
+        form{
+            
+            height: 250px;
+            padding: 25px 50px 25px 50px;
         }
-            .inputSubmit{
-                margin: 5px 0px;
-               
+
+            input{
+                width: 100%;
+                height: 35px;
+                text-align: center;
+                border-radius: 5px;
+                color: #000000;
+                margin: 10px 0px;
+
             }
+                .inputSubmit{
+                    margin: 5px 0px;
+                
+                }
 
 footer p{
     
@@ -73,4 +94,82 @@ footer p{
     color: black;
     text-align: center;
     background-color: #00ff4e;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-color: black;
+    }
+   
+    header{
+    display: block;
+    }
+
+        .section-conteiner {
+        display: grid;
+        height: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 20px;
+
+            
+        }
+
+            .logo-blackfriday{
+                max-width: 350px;
+                padding: 60px 25px 25px 25px;
+                
+            }
+
+            h2{
+                max-width: 350px;
+                padding: 50px 25px 80px 25px;
+                color: #00ff4e;
+                font-size: 2.5rem;
+                text-align: center;
+                
+            }
+
+   
+    section{
+        display: flex;
+        max-width: 350px;
+        padding: auto;
+
+    }
+
+        .card-conteiner{
+            display: grid;
+        }
+
+            .logo-desconto{
+                max-width: 250px;
+                padding: 0px 50px 25px 50px;
+            }
+            
+
+        .background-section-one{
+
+            background-image:  url("/assets/bg-black-wall.jpg");
+            
+        }
+        
+        .background-section-two{
+            
+            background-image:  url("/assets/bg-black-wall-02.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+    
+    footer{
+        width: 400px;
+    
+
+    }
+
+
+
 }
